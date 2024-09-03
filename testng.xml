@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RestAssuredTestsuite">
+  <test thread-count="5" name="RestAssuredTestsuite">
+    <classes>
+      <class name="com.apitesting.testcases.TC002_Testcase"/>
+      <class name="com.apitesting.testcases.TC001_Testcase"/>
+      <class name="com.apitesting.testcases.TC003_Testcase"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
