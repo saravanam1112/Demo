@@ -1,5 +1,8 @@
 package com.apitesting.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -27,21 +30,21 @@ public class TC001_Testcase extends BaseTest {
 	public void statuscode() {
 		
 		int stscode=response.getStatusCode();
-		Assert.assertEquals(stscode, 200);
+		AssertJUnit.assertEquals(stscode, 200);
 	}
 	
 	@Test
 	public void statusline() {
 		
 		String content=response.contentType();
-		Assert.assertEquals(content, "application/json; charset=utf-8");
+		AssertJUnit.assertEquals(content, "application/json; charset=utf-8");
 	}
 	
 	@Test
 	public void getbody() {
 		
 		String body=response.getBody().asString();
-		Assert.assertTrue(body!=null);
+		AssertJUnit.assertTrue(body!=null);
 	}
 	
 	

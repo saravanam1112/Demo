@@ -1,5 +1,8 @@
 package com.apitesting.testcases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -7,7 +10,6 @@ import com.apitesting.base.BaseTest;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
-import junit.framework.Assert;
 
 public class TC003_Testcase extends BaseTest {
 
@@ -24,6 +26,6 @@ public class TC003_Testcase extends BaseTest {
 	public void code() {
 		
 		int stscode= response.getStatusCode();
-		Assert.assertEquals(stscode, 204);
+		AssertJUnit.assertEquals(stscode, 204);
 	}
 }
