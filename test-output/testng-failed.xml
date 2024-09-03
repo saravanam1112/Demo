@@ -5,6 +5,8 @@
     <classes>
       <class name="com.apitesting.testcases.TC002_Testcase">
         <methods>
+          <include name="statuscode"/>
+          <include name="logsetup"/>
           <include name="updatedata"/>
           <include name="body"/>
         </methods>
