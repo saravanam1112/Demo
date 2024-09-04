@@ -27,32 +27,32 @@ public class TC001_Get_Testcase extends BaseTest {
 	}
 	
 	@Test
-	public void statuscode() {
+	public void get_statuscode() {
 		
 		int stscode=response.getStatusCode();
 		Assert.assertEquals(stscode, 200);
 	}
 	
 	@Test
-	public void statusline() {
+	public void get_statusline() {
 		
-		String content=response.contentType();
-		Assert.assertEquals(content, "application/json; charset=utf-8");
+		String get_content=response.contentType();
+		Assert.assertEquals(get_content, "application/json; charset=utf-8");
 	}
 	
 	@Test
-	public void getbody() {
+	public void get_body() {
 		
-		String body=response.getBody().asString();
-		Assert.assertTrue(body!=null);
+		String get_body=response.getBody().asString();
+		Assert.assertTrue(get_body!=null);
 	}
 	
 	@Test
-	public void time() {
-		long timing = response.getTime();
-		Assert.assertTrue(timing<2000);
+	public void get_responsetime() {
+		long get_timing = response.getTime();
+		Assert.assertTrue(get_timing<2000);
 		
-		if(timing>2000)
+		if(get_timing>2000)
 		{
 			System.out.println("The response time is greater than 10000");
 		}

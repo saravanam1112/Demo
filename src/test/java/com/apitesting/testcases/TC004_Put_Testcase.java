@@ -35,23 +35,23 @@ public class TC004_Put_Testcase extends BaseTest {
 	}
 	
 	@Test
-	public void stscode()
+	public void put_stscode()
 	{
-		int code= response.getStatusCode();
-		Assert.assertEquals(code, 200);
+		int put_code= response.getStatusCode();
+		Assert.assertEquals(put_code, 200);
 	}
 
 	@Test
-	public void body() {
-		String resbody= response.getBody().asString();
-		System.out.println(resbody);
-		Assert.assertEquals(resbody.contains(address), true);
+	public void put_responsebody() {
+		String put_resbody= response.getBody().asString();
+		System.out.println(put_resbody);
+		Assert.assertEquals(put_resbody.contains(address), true);
 	}
 	
 	@Test
-	public void time() {
-		long updatetime= response.getTime();
-		Assert.assertTrue(updatetime<2000);
+	public void put_responsetime() {
+		long put_time= response.getTime();
+		Assert.assertTrue(put_time<2000);
 	}
 		
 		

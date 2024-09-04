@@ -5,7 +5,7 @@
     <classes>
       <class name="com.apitesting.testcases.TC001_Get_Testcase">
         <methods>
-          <include name="time"/>
+          <include name="responsetime"/>
           <include name="getdata"/>
         </methods>
       </class> <!-- com.apitesting.testcases.TC001_Get_Testcase -->

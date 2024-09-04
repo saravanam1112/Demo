@@ -41,25 +41,25 @@ public class TC002_Post_Testcase extends BaseTest{
 	}
 	
 	@Test
-	public void statuscode() {
-		int stscode= response.getStatusCode();
-		Assert.assertEquals(stscode, 201);
+	public void post_statuscode() {
+		int post_stscode= response.getStatusCode();
+		Assert.assertEquals(post_stscode, 201);
 		
 	}
 
 	@Test
-	public void body() {
-		String resbody= response.getBody().asString();
-		System.out.println(resbody);
-		Assert.assertEquals(resbody.contains(empname1), true);
+	public void post_responsebody() {
+		String post_resbody= response.getBody().asString();
+		System.out.println(post_resbody);
+		Assert.assertEquals(post_resbody.contains(empname1), true);
 	}
 	
 	@Test
-	public void time() {
-		long timing = response.getTime();
-		Assert.assertTrue(timing<1000);
+	public void post_responsetime() {
+		long post_timing = response.getTime();
+		Assert.assertTrue(post_timing<1000);
 		
-		if(timing>2000)
+		if(post_timing>2000)
 		{
 			System.out.println("The response time is greater than 10000");
 		}

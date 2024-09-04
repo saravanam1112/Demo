@@ -24,10 +24,10 @@ public class TC003_Del_Testcase extends BaseTest {
 	}
 	
 	@Test
-	public void code() {
+	public void del_code() {
 		
-		int stscode= response.getStatusCode();
-		Assert.assertEquals(stscode, 204);
+		int del_stscode= response.getStatusCode();
+		Assert.assertEquals(del_stscode, 204);
 	}
 	
 	
