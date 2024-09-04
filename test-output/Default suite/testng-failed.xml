@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.apitesting.testcases.TC002_Testcase">
+      <class name="com.apitesting.testcases.TC004_Put_Testcase">
         <methods>
-          <include name="statuscode"/>
-          <include name="logsetup"/>
-          <include name="updatedata"/>
-          <include name="body"/>
+          <include name="edit_data"/>
+          <include name="time"/>
         </methods>
-      </class> <!-- com.apitesting.testcases.TC002_Testcase -->
+      </class> <!-- com.apitesting.testcases.TC004_Put_Testcase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

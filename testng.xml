@@ -2,9 +2,10 @@
 <suite name="RestAssuredTestsuite">
   <test thread-count="5" name="RestAssuredTestsuite">
     <classes>
-      <class name="com.apitesting.testcases.TC002_Testcase"/>
-      <class name="com.apitesting.testcases.TC001_Testcase"/>
-      <class name="com.apitesting.testcases.TC003_Testcase"/>
+      <class name="com.apitesting.testcases.TC001_Get_Testcase"/>
+      <class name="com.apitesting.testcases.TC002_Post_Testcase"/>
+      <class name="com.apitesting.testcases.TC003_Del_Testcase"/>
+      <class name="com.apitesting.testcases.TC004_Put_Testcase"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

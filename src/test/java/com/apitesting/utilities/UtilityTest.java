@@ -21,5 +21,11 @@ public class UtilityTest {
 		String generateString= RandomStringUtils.randomNumeric(5);
 		return(generateString);
 	}
+	
+	public static String address() 
+	{
+		String genstr=RandomStringUtils.randomAlphabetic(3);
+		return("Bangalore"+ genstr);
+	}
 
 }

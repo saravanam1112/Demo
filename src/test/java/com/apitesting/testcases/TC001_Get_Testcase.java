@@ -14,7 +14,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 
-public class TC001_Testcase extends BaseTest {
+public class TC001_Get_Testcase extends BaseTest {
 	
 	@BeforeClass
 	public void getdata() throws InterruptedException {
@@ -30,24 +30,34 @@ public class TC001_Testcase extends BaseTest {
 	public void statuscode() {
 		
 		int stscode=response.getStatusCode();
-		AssertJUnit.assertEquals(stscode, 200);
+		Assert.assertEquals(stscode, 200);
 	}
 	
 	@Test
 	public void statusline() {
 		
 		String content=response.contentType();
-		AssertJUnit.assertEquals(content, "application/json; charset=utf-8");
+		Assert.assertEquals(content, "application/json; charset=utf-8");
 	}
 	
 	@Test
 	public void getbody() {
 		
 		String body=response.getBody().asString();
-		AssertJUnit.assertTrue(body!=null);
+		Assert.assertTrue(body!=null);
 	}
 	
-	
+	@Test
+	public void time() {
+		long timing = response.getTime();
+		Assert.assertTrue(timing<2000);
+		
+		if(timing>2000)
+		{
+			System.out.println("The response time is greater than 10000");
+		}
+		
+	}
 	
 
 }

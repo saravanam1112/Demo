@@ -14,7 +14,7 @@ import com.apitesting.utilities.UtilityTest;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 
-public class TC002_Testcase extends BaseTest{
+public class TC002_Post_Testcase extends BaseTest{
 	
 	String empname1 = UtilityTest.empname();
 	String empsalary= UtilityTest.empsal();
@@ -43,7 +43,7 @@ public class TC002_Testcase extends BaseTest{
 	@Test
 	public void statuscode() {
 		int stscode= response.getStatusCode();
-		AssertJUnit.assertEquals(stscode, 201);
+		Assert.assertEquals(stscode, 201);
 		
 	}
 
@@ -51,6 +51,17 @@ public class TC002_Testcase extends BaseTest{
 	public void body() {
 		String resbody= response.getBody().asString();
 		System.out.println(resbody);
-		AssertJUnit.assertEquals(resbody.contains(empname1), true);
+		Assert.assertEquals(resbody.contains(empname1), true);
 	}
+	
+	@Test
+	public void time() {
+		long timing = response.getTime();
+		Assert.assertTrue(timing<1000);
+		
+		if(timing>2000)
+		{
+			System.out.println("The response time is greater than 10000");
+		}
+}
 }
