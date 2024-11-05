@@ -1,79 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-04T12:21:51 IST" name="RestAssuredTestsuite" finished-at="2024-09-04T12:22:00 IST" duration-ms="8617">
+  <suite started-at="2024-11-05T10:53:33 IST" name="Default suite" finished-at="2024-11-05T10:53:38 IST" duration-ms="5118">
     <groups>
     </groups>
-    <test started-at="2024-09-04T12:21:51 IST" name="RestAssuredTestsuite" finished-at="2024-09-04T12:22:00 IST" duration-ms="8617">
-      <class name="com.apitesting.testcases.TC003_Del_Testcase">
-        <test-method is-config="true" signature="del()[pri:0, instance:com.apitesting.testcases.TC003_Del_Testcase@5b218417]" started-at="2024-09-04T12:21:59 IST" name="del" finished-at="2024-09-04T12:21:59 IST" duration-ms="562" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- del -->
-        <test-method signature="del_code()[pri:0, instance:com.apitesting.testcases.TC003_Del_Testcase@5b218417]" started-at="2024-09-04T12:21:59 IST" name="del_code" finished-at="2024-09-04T12:21:59 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- del_code -->
-      </class> <!-- com.apitesting.testcases.TC003_Del_Testcase -->
-      <class name="com.apitesting.testcases.TC002_Post_Testcase">
-        <test-method is-config="true" signature="updatedata()[pri:0, instance:com.apitesting.testcases.TC002_Post_Testcase@cc43f62]" started-at="2024-09-04T12:21:58 IST" name="updatedata" finished-at="2024-09-04T12:21:59 IST" duration-ms="700" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updatedata -->
-        <test-method signature="post_responsebody()[pri:0, instance:com.apitesting.testcases.TC002_Post_Testcase@cc43f62]" started-at="2024-09-04T12:21:59 IST" name="post_responsebody" finished-at="2024-09-04T12:21:59 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- post_responsebody -->
-        <test-method signature="post_responsetime()[pri:0, instance:com.apitesting.testcases.TC002_Post_Testcase@cc43f62]" started-at="2024-09-04T12:21:59 IST" name="post_responsetime" finished-at="2024-09-04T12:21:59 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- post_responsetime -->
-        <test-method signature="post_statuscode()[pri:0, instance:com.apitesting.testcases.TC002_Post_Testcase@cc43f62]" started-at="2024-09-04T12:21:59 IST" name="post_statuscode" finished-at="2024-09-04T12:21:59 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- post_statuscode -->
-      </class> <!-- com.apitesting.testcases.TC002_Post_Testcase -->
-      <class name="com.apitesting.testcases.TC004_Put_Testcase">
-        <test-method is-config="true" signature="edit_data()[pri:0, instance:com.apitesting.testcases.TC004_Put_Testcase@645aa696]" started-at="2024-09-04T12:21:59 IST" name="edit_data" finished-at="2024-09-04T12:22:00 IST" duration-ms="511" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- edit_data -->
-        <test-method signature="put_responsebody()[pri:0, instance:com.apitesting.testcases.TC004_Put_Testcase@645aa696]" started-at="2024-09-04T12:22:00 IST" name="put_responsebody" finished-at="2024-09-04T12:22:00 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- put_responsebody -->
-        <test-method signature="put_responsetime()[pri:0, instance:com.apitesting.testcases.TC004_Put_Testcase@645aa696]" started-at="2024-09-04T12:22:00 IST" name="put_responsetime" finished-at="2024-09-04T12:22:00 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- put_responsetime -->
-        <test-method signature="put_stscode()[pri:0, instance:com.apitesting.testcases.TC004_Put_Testcase@645aa696]" started-at="2024-09-04T12:22:00 IST" name="put_stscode" finished-at="2024-09-04T12:22:00 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- put_stscode -->
-      </class> <!-- com.apitesting.testcases.TC004_Put_Testcase -->
+    <test started-at="2024-11-05T10:53:33 IST" name="Default test" finished-at="2024-11-05T10:53:38 IST" duration-ms="5118">
       <class name="com.apitesting.testcases.TC001_Get_Testcase">
-        <test-method is-config="true" signature="getdata()[pri:0, instance:com.apitesting.testcases.TC001_Get_Testcase@72cc7e6f]" started-at="2024-09-04T12:21:51 IST" name="getdata" finished-at="2024-09-04T12:21:58 IST" duration-ms="6540" status="PASS">
+        <test-method is-config="true" signature="getdata()[pri:0, instance:com.apitesting.testcases.TC001_Get_Testcase@2cb4893b]" started-at="2024-11-05T10:53:33 IST" name="getdata" finished-at="2024-11-05T10:53:38 IST" duration-ms="4996" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getdata -->
-        <test-method signature="get_body()[pri:0, instance:com.apitesting.testcases.TC001_Get_Testcase@72cc7e6f]" started-at="2024-09-04T12:21:58 IST" name="get_body" finished-at="2024-09-04T12:21:58 IST" duration-ms="60" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_body -->
-        <test-method signature="get_responsetime()[pri:0, instance:com.apitesting.testcases.TC001_Get_Testcase@72cc7e6f]" started-at="2024-09-04T12:21:58 IST" name="get_responsetime" finished-at="2024-09-04T12:21:58 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_responsetime -->
-        <test-method signature="get_statuscode()[pri:0, instance:com.apitesting.testcases.TC001_Get_Testcase@72cc7e6f]" started-at="2024-09-04T12:21:58 IST" name="get_statuscode" finished-at="2024-09-04T12:21:58 IST" duration-ms="3" status="PASS">
+        <test-method signature="get_statuscode()[pri:1, instance:com.apitesting.testcases.TC001_Get_Testcase@2cb4893b]" started-at="2024-11-05T10:53:38 IST" name="get_statuscode" finished-at="2024-11-05T10:53:38 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_statuscode -->
-        <test-method signature="get_statusline()[pri:0, instance:com.apitesting.testcases.TC001_Get_Testcase@72cc7e6f]" started-at="2024-09-04T12:21:58 IST" name="get_statusline" finished-at="2024-09-04T12:21:58 IST" duration-ms="3" status="PASS">
+        <test-method signature="get_body()[pri:2, instance:com.apitesting.testcases.TC001_Get_Testcase@2cb4893b]" started-at="2024-11-05T10:53:38 IST" name="get_body" finished-at="2024-11-05T10:53:38 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_body -->
+        <test-method signature="get_statusline()[pri:3, instance:com.apitesting.testcases.TC001_Get_Testcase@2cb4893b]" started-at="2024-11-05T10:53:38 IST" name="get_statusline" finished-at="2024-11-05T10:53:38 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_statusline -->
+        <test-method signature="get_responsetime()[pri:4, instance:com.apitesting.testcases.TC001_Get_Testcase@2cb4893b]" started-at="2024-11-05T10:53:38 IST" name="get_responsetime" finished-at="2024-11-05T10:53:38 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_responsetime -->
+        <test-method signature="getheader()[pri:5, instance:com.apitesting.testcases.TC001_Get_Testcase@2cb4893b]" started-at="2024-11-05T10:53:38 IST" name="getheader" finished-at="2024-11-05T10:53:38 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getheader -->
       </class> <!-- com.apitesting.testcases.TC001_Get_Testcase -->
-    </test> <!-- RestAssuredTestsuite -->
-  </suite> <!-- RestAssuredTestsuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

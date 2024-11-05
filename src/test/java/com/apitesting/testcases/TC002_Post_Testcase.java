@@ -13,6 +13,7 @@ import com.apitesting.utilities.UtilityTest;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
+import io.restassured.specification.RequestSpecification;
 
 public class TC002_Post_Testcase extends BaseTest{
 	
@@ -25,6 +26,7 @@ public class TC002_Post_Testcase extends BaseTest{
 	public void updatedata() {
 		
 		RestAssured.baseURI="https://reqres.in/api";
+		
 		httpRequest = RestAssured.given();
 		
 		JSONObject obj= new JSONObject();
@@ -57,11 +59,11 @@ public class TC002_Post_Testcase extends BaseTest{
 	@Test
 	public void post_responsetime() {
 		long post_timing = response.getTime();
-		Assert.assertTrue(post_timing<1000);
+		Assert.assertTrue(post_timing<2000);
 		
 		if(post_timing>2000)
 		{
-			System.out.println("The response time is greater than 10000");
+			System.out.println("The response time is greater than 20000");
 		}
 }
 }

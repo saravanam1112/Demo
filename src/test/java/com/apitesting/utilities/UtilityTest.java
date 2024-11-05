@@ -18,7 +18,7 @@ public class UtilityTest {
 	
 	public static String empage()
 	{
-		String generateString= RandomStringUtils.randomNumeric(5);
+		String generateString= RandomStringUtils.randomNumeric(2);
 		return(generateString);
 	}
 	
